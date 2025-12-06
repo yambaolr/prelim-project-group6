@@ -1,0 +1,73 @@
+.footer-section {
+    background-color: var(--primary-dark); /* Uses your darker red variable */
+    color: #ffffff;
+    font-family: var(--font-sans);
+    margin-top: auto; /* Pushes footer to bottom if page is short */
+}
+
+.footer-brand {
+    font-family: var(--font-serif);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff; /* White text for contrast on dark red */
+    margin-bottom: 1rem;
+}
+
+.footer-desc, .contact-info {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-heading {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: #fffdf9; /* Your 'background-soft' color for slight warmth */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.btn-social {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background: white;
+    color: var(--primary-dark);
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+    margin: 2rem 0;
+}
+
+.copyright-text {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
