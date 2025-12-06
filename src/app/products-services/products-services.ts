@@ -26,6 +26,12 @@ export class ProductsServices {
       description: 'Daily baked selection of cakes, cookies, and other sweet treats to pair with your coffee.',
       price: '₱60 - ₱120',
       image: 'https://cdn.pixabay.com/photo/2016/02/29/00/19/cake-1227842_1280.jpg',
+    },
+     {
+      name: 'Barako coffee',
+      description: 'Daily baked selection of cakes, cookies, and other sweet treats to pair with your coffee.',
+      price: '₱60 - ₱120',
+      image: 'assets/images/1.jpg',
     }
   ];
 }
