@@ -75,10 +75,15 @@
   box-shadow: 0 6px 15px var(--shadow-medium);
   opacity: 0.9;
 }
+.btn-hero.primary.btn-small {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}
 
 /* Features Grid Container & Header */
 .section-header { text-align: center; margin-bottom: 4rem; margin-top: 0; }
 .section-header h2 { font-size: 2.2rem; margin-top: 0; color: var(--primary-dark); }
+.section-header.align-left { text-align: left; }
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -113,4 +118,162 @@
 .feature-card p {
   color: var(--text-light);
   line-height: 1.6;
+}
+
+/* --- NEW SECTIONS --- */
+
+/* Featured Product Section (Uses Flexbox) */
+.featured-product-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: white; /* Make this section stand out */
+}
+
+.featured-card {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-medium);
+}
+.featured-card:nth-child(even) {
+    flex-direction: row-reverse; /* Alternate layout */
+}
+
+.product-image {
+    flex: 1;
+    min-width: 40%;
+}
+.product-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+.product-details {
+    flex: 1;
+    min-width: 50%;
+}
+.product-details .product-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+.product-details .tagline {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 1rem;
+}
+.product-details .price-range {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+}
+.product-details .description {
+    margin-bottom: 2rem;
+}
+
+/* Location Section (Uses CSS Grid) */
+.location-section {
+    background-color: #f8f8f8;
+    padding: 6rem 0;
+    border-top: 1px solid var(--border-light);
+}
+.location-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Details | Map */
+    gap: 3rem;
+    align-items: center;
+}
+
+.location-details .location-info {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.location-details .location-info strong {
+    color: var(--primary-dark);
+}
+
+.btn-hero.primary.btn-location {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem 2rem;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--border-light);
+}
+.social-links p {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-dark);
+}
+.instagram-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.instagram-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.location-map img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px var(--shadow-medium);
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1000px) {
+    /* Stack content on smaller screens */
+    .location-content-grid, .featured-card {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .featured-card .product-details, .featured-card .product-image {
+        min-width: 100%;
+    }
+    .featured-card:nth-child(even) {
+        flex-direction: column; /* Ensure stacked on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cafe-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .btn-hero {
+        width: 100%;
+        text-align: center;
+    }
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    .featured-card, .location-details {
+        padding: 1.5rem;
+    }
 }
