@@ -1,4 +1,5 @@
-<div [@contentState]="'in'"> <div class="hero-section">
+<div [@contentState]="'in'">
+  <div class="hero-section">
     <div class="hero-content">
       <h1 class="cafe-title">CENTRO COFFEE: Your Daily Retreat</h1>
       <p class="hero-subtitle">Cozy coffee, great food, and the perfect spot to think and create in Angeles City.</p>
@@ -35,4 +36,47 @@
       </div>
     </div>
   </div>
+
+  <section class="container featured-product-section">
+    <header class="section-header">
+      <h2>Must Try: The Dubai Chocolate</h2>
+    </header>
+    <div class="featured-card">
+      <div class="product-details">
+        <h3 class="product-title">Iced Dubai Chocolate</h3>
+        <p class="tagline">An international favorite, re-imagined. This signature iced chocolate drink is rich, creamy, and uniquely refreshing.</p>
+        <div class="price-range">Price Range: ₱80 - ₱180 (for the Coffee/Beverage category)</div>
+        <p class="description">This drink is part of our Iced & Hot Coffees* range, which features local brews like Barako Coffee and international favorites. It has become a community favorite since our soft opening on **November 16, 2024**. Come try the drink that everyone is talking about!</p>
+        <a routerLink="/products-services" class="btn-hero primary btn-small">See Full Menu</a>
+      </div>
+      <div class="product-image">
+        <img src="assets/images/barako-coffee.jpeg" alt="A freshly prepared latte with latte art">
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section">
+    <div class="container location-content-grid">
+      <div class="location-details">
+        <header class="section-header align-left">
+          <h2>Visit Us</h2>
+        </header>
+        <p class="location-info">
+          <strong>Location:</strong> Inside Bale Herencia, Angeles City, Pampanga.
+        </p>
+        <p class="location-info">
+          <strong>Operating Hours:</strong> Monday to Sunday, 10:00 AM – 10:00 PM.
+        </p>
+        <a href="https://maps.app.goo.gl/example" target="_blank" class="btn-hero primary btn-location">Get Directions on Map</a>
+        <div class="social-links">
+          <p>Follow our community on Instagram: 
+            <a href="https://www.instagram.com/centrocoffee.ph" target="_blank" class="instagram-link">@centrocoffee.ph</a>
+          </p>
+        </div>
+      </div>
+      <div class="location-map">
+         <img src="assets/images/5.jpg" alt="A cozy spot inside Bale Herencia">
+      </div>
+    </div>
+  </section>
 </div>
