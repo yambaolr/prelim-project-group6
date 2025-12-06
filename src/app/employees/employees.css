@@ -10,10 +10,7 @@ a {
     text-decoration: none;
 }
 
-.m-t-5 {
-    margin-top: 5px;
-}
-
+/* Section Header */
 .section-header { 
     font-family: var(--font-serif);
     text-transform: uppercase;
@@ -22,31 +19,26 @@ a {
     font-weight: bold;
 }
 
-
 /* Card Styles */
 .card {
     background: #fff;
     margin-bottom: 30px;
-    transition: .5s;
-    border: 0;
     border-radius: .1875rem;
-    display: inline-block;
-    position: relative;
     width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
 .card .body {
     font-size: 14px;
     color: var(--text-dark);
     padding: 20px;
-    font-weight: 400;
 }
 
-/* Profile Header Styles */
+/* Profile Header */
 .profile-page .profile-header {
     position: relative;
-    text-align: center;
-    padding: 15px 0;
+    text-align: left;
+    padding: 15px;
 }
 
 .profile-page .profile-header .profile-image img {
@@ -64,23 +56,21 @@ a {
     font-weight: bold;
 }
 
+.profile-page .profile-header p {
+    margin: 5px;
+}
+
+.details {
+    padding-left: 24px;
+}
+
 .profile-page .profile-header .job_post {
     font-size: 1.1rem;
     color: var(--text-light);
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
-.profile-page .profile-header .btn-primary {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-    margin-top: 15px;
-}
-
-.profile-page .profile-header .btn-primary:hover {
-    background: var(--primary-dark);
-    border-color: var(--primary-dark);
-}
-
+/* Profile Sub-header */
 .profile-page .profile-sub-header {
     min-height: 60px;
     width: 100%;
@@ -90,17 +80,13 @@ a {
 
 .profile-page .profile-sub-header ul.box-list {
     display: inline-table;
-    table-layout: fixed;
     width: 100%;
-    background: var(--background-soft);
     padding: 0;
     margin: 0;
 }
 
 .profile-page .profile-sub-header ul.box-list li {
     border-right: 1px solid var(--border-light);
-    display: table-cell;
-    list-style: none;
     text-align: center;
 }
 
@@ -113,9 +99,14 @@ a {
     padding: 15px 0;
     color: var(--text-dark);
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
 
 .profile-page .profile-sub-header ul.box-list li a:hover {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+}
+
+a:hover{
+    text-decoration: underline;
 }

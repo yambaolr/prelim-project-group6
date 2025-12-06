@@ -1,8 +1,7 @@
 <header class="section-header">
-    <h2>
-        Meet Our Dedicated Team
-    </h2>
+    <h2>Meet Our Dedicated Team</h2>
 </header>
+
 <div class="container profile-page">
   <div class="row">
     <div *ngFor="let profile of profiles" class="col-xl-6 col-lg-7 col-md-12">
@@ -14,9 +13,13 @@
                 <img [src]="profile.imageUrl" alt="Profile Image" class="rounded-circle img-fluid">
               </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-12">
+            <div class="col-lg-8 col-md-8 col-12 details">
               <h4 class="m-t-0 m-b-0"><strong>{{ profile.name }}</strong></h4>
-              <span class="job_post">{{ profile.job }}</span>
+              <span class="job_post">{{ profile.role }}</span>
+              <p><strong>Employee Number: </strong> {{ profile.number }}</p>
+              <p><strong>Gender: </strong> {{ profile.gender }}</p>
+              <p><strong>Email: </strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+              <p><strong>Status: </strong> {{ profile.status }}</p>
             </div>
           </div>
         </div>
