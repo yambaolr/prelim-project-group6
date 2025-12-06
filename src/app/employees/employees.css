@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin-top: 20px;
+    background: var(--background-soft);
+    font-family: var(--font-sans);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.section-header { 
+    font-family: var(--font-serif);
+    text-transform: uppercase;
+    margin: 2em auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Card Styles */
+.card {
+    background: #fff;
+    margin-bottom: 30px;
+    transition: .5s;
+    border: 0;
+    border-radius: .1875rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+
+.card .body {
+    font-size: 14px;
+    color: var(--text-dark);
+    padding: 20px;
+    font-weight: 400;
+}
+
+/* Profile Header Styles */
+.profile-page .profile-header {
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.profile-page .profile-header .profile-image img {
+    border-radius: 50%;
+    width: 140px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.profile-page .profile-header h4 {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-page .profile-header .job_post {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+.profile-page .profile-header .btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.profile-page .profile-header .btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.profile-page .profile-sub-header {
+    min-height: 60px;
+    width: 100%;
+    background: var(--background-soft);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page .profile-sub-header ul.box-list {
+    display: inline-table;
+    table-layout: fixed;
+    width: 100%;
+    background: var(--background-soft);
+    padding: 0;
+    margin: 0;
+}
+
+.profile-page .profile-sub-header ul.box-list li {
+    border-right: 1px solid var(--border-light);
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+}
+
+.profile-page .profile-sub-header ul.box-list li:last-child {
+    border-right: none;
+}
+
+.profile-page .profile-sub-header ul.box-list li a {
+    display: block;
+    padding: 15px 0;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.profile-page .profile-sub-header ul.box-list li a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
