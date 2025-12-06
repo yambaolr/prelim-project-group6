@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  background-color: var(--background-soft);
+  min-height: 100vh;
+}
+
+.card {
+    max-width: 850px; 
+    margin: 0 auto; 
+    padding: 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+.card-body-text {
+    padding: 2rem;
+}
+
+.section-heading {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+    padding: 0;
+    color: var(--text-dark);
+}
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.performance-quote {
+    border-left: 5px solid var(--primary-color);
+    padding: 1rem 1.5rem;
+    background-color: #fceceb;
+    margin: 2rem 0;
+    color: var(--text-dark);
+    font-style: italic;
+}
+.performance-quote p {
+    margin: 0;
+}
+.performance-quote strong {
+    color: var(--primary-dark);
+    font-style: normal;
+}
+
+.social-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+:host {
+  display: block;
+  background-color: var(--background-soft);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  /**background: url('assets/images/cafe-bg.jpeg') no-repeat center center/cover;
+  **/color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+.hero-content { z-index: 2; }
+
+.cafe-title {
+  font-size: 3.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: 900;
+  letter-spacing: 0px;
+  color: white; /* Override h1 global style */
+}
+.hero-subtitle {
+  font-size: 1.4rem;
+  opacity: 1;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  color: white;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.btn-hero {
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.btn-hero.primary {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.5);
+}
+.btn-hero.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.btn-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px var(--shadow-medium);
+  opacity: 0.9;
+}
+
+/* Features Grid Container & Header */
+.section-header { text-align: center; margin-bottom: 4rem; margin-top: 0; }
+.section-header h2 { font-size: 2.2rem; margin-top: 0; color: var(--primary-dark); }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.feature-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px var(--shadow-light);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 5px solid var(--primary-color);
+}
+.feature-card:hover { transform: translateY(-5px); }
+.icon-circle {
+  font-size: 2rem;
+  background: var(--background-soft);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  border: 1px solid var(--border-light);
+}
+.feature-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+.feature-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}

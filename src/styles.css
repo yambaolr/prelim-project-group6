@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #d62828; /* Red/Primary */
+    --primary-dark: #a31d1d; /* Darker Red */
+    --text-dark: #333;
+    --text-light: #666;
+    --border-light: #eee;
+    --background-soft: #fffdf9; /* Creamy White */
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background: var(--background-soft);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    line-height: 1.3;
+    color: var(--primary-dark);
+}
+
+/* --- General Component Styling --- */
+.container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 3rem 1.5rem; 
+}
+.page-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+.page-header h1 { 
+    font-size: 2.8rem; 
+    color: var(--primary-color);
+}
+.subtitle { 
+    color: var(--text-light); 
+    font-size: 1.2rem; 
+}
+
+/* --- Navbar (Ensure this is in app.css or loaded globally) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 4px 15px var(--shadow-light);
+}
+.nav-brand {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a.active, .nav-links a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-links a:not(.active):hover::after {
+    content: none;
+}
