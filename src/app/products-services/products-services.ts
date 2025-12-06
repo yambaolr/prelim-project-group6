@@ -3,35 +3,71 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-products-services',
-  imports: [ CommonModule ],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './products-services.html',
   styleUrl: './products-services.css',
 })
 export class ProductsServices {
   menuItems = [
+    // --- COFFEE ---
     {
-      name: 'Iced & Hot Coffees',
-      description: 'Featuring local brews like Barako Coffee and international favorites like the unique Dubai Chocolate inspired drink.',
-      price: '₱80 - ₱180',
-      image: 'https://images.pexels.com/photos/414720/pexels-photo-414720.jpeg?cs=srgb&dl=art-background-beverage-414720.jpg&fm=jpg',
+      name: 'Kapeng Barako',
+      description: 'Strong and bold local Batangas brew. A classic favorite.',
+      price: '₱80',
+      image: 'assets/images/barako-coffee.jpeg', // Note: .jpeg extension
     },
     {
-      name: 'Rice Meals',
-      description: 'Perfect for lunch or dinner, including popular dishes like Tapsilog and a savory Beef Kaldereta.',
-      price: '₱150 - ₱250',
-      image: 'https://thumbs.dreamstime.com/b/freshly-cooked-filipino-food-called-tapsilog-photo-beef-tenders-served-fried-rice-egg-288357062.jpg?w=768',
+      name: 'Dubai Chocolate Drink',
+      description: 'Rich, creamy chocolate drink inspired by the viral Dubai flavors.',
+      price: '₱180',
+      image: 'assets/images/dubai-chocolate.jpg',
     },
     {
-      name: 'Pastries & Desserts',
-      description: 'Daily baked selection of cakes, cookies, and other sweet treats to pair with your coffee.',
-      price: '₱60 - ₱120',
-      image: 'https://cdn.pixabay.com/photo/2016/02/29/00/19/cake-1227842_1280.jpg',
+      name: 'Spanish Latte',
+      description: 'Espresso with textured milk and sweetened condensed milk.',
+      price: '₱140',
+      image: 'assets/images/spanish latte.jpg', // Note: Check if there is a space in the filename
     },
-     {
-      name: 'Barako coffee',
-      description: 'Daily baked selection of cakes, cookies, and other sweet treats to pair with your coffee.',
-      price: '₱60 - ₱120',
-      image: 'assets/images/1.jpg',
+    {
+      name: 'Matcha Latte',
+      description: 'Premium matcha green tea blend served hot or iced.',
+      price: '₱150',
+      image: 'assets/images/matcha.jpg',
+    },
+
+    // --- RICE MEALS ---
+    {
+      name: 'Beef Tapa',
+      description: 'Marinated beef tapa served with garlic rice and fried egg.',
+      price: '₱160',
+      image: 'assets/images/beeftapa.jpg',
+    },
+    {
+      name: 'Beef Kaldereta',
+      description: 'Savory beef stew in tomato sauce with potatoes and carrots.',
+      price: '₱220',
+      image: 'assets/images/beef-kaldereta.jpg',
+    },
+    {
+      name: 'Kare-Kare',
+      description: 'Traditional peanut stew with tender beef and vegetables.',
+      price: '₱250',
+      image: 'assets/images/kare-kare.jpg',
+    },
+    {
+      name: 'Spaghetti Bolognese',
+      description: 'Classic pasta with a rich, meaty tomato sauce.',
+      price: '₱180',
+      image: 'assets/images/spaghetti-bolognese.jpg',
+    },
+
+    // --- PASTRIES ---
+    {
+      name: 'Biscoff Treat',
+      description: 'Sweet pastry topped with caramelized biscuit spread.',
+      price: '₱120',
+      image: 'assets/images/biscoff.jpg',
     }
   ];
 }
