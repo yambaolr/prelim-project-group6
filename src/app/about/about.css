@@ -5,22 +5,48 @@
 }
 
 .card {
-    max-width: 850px; 
-    margin: 0 auto; 
+    max-width: 900px; 
+    margin: 0 auto 4rem auto; 
     padding: 0;
-    line-height: 1.7;
-    font-size: 1.1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
+
 .card-body-text {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .section-heading {
     color: var(--primary-dark);
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    position: relative;
 }
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+.info-block {
+    background: #fdf9f5;
+    padding: 1.5rem 2rem;
+    border-left: 5px solid var(--primary-color);
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.info-block ul li {
+    margin-bottom: 0.6rem;
+}
+
 
 ul {
     list-style: disc;

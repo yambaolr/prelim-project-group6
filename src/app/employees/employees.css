@@ -19,6 +19,12 @@ a {
     font-weight: bold;
 }
 
+h2 {
+    margin-top: 1.5em!important;
+    font-size: 2.5rem;
+    color: var(--primary-color)!important;
+}
+
 /* Card Styles */
 .card {
     background: #fff;
@@ -147,4 +153,9 @@ a:hover{
 .dropdown-item:hover {
     background: var(--background-soft);
     color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
