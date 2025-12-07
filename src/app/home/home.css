@@ -6,9 +6,9 @@
 
 /* Hero Section */
 .hero-section {
-  /**background: url('assets/images/cafe-bg.jpeg') no-repeat center center/cover;
-  **/color: white;
-  min-height: 60vh;
+  background: url('../../assets/images/cafe-bg.jpeg') no-repeat center center/cover;
+  color: white;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

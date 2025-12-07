@@ -8,6 +8,8 @@
     styleUrl: './employees.css',
   })
   export class Employees {
+    filter: string = '';
+
    profiles = [
     {
       number: 'CCE-001',
