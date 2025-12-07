@@ -1,84 +1,78 @@
 <div [@contentState]="'in'">
-  <div class="hero-section">
+
+  <section class="hero-section">
     <div class="hero-content">
       <h1 class="cafe-title">CENTRO COFFEE: Your Daily Retreat</h1>
       <p class="hero-subtitle">Cozy coffee, great food, and the perfect spot to think and create in Angeles City.</p>
       <div class="hero-buttons">
-        <a routerLink="/products-services">
-          <button class="btn-hero primary">View Full Menu</button>
-        </a>
-        <a routerLink="/about">
-          <button class="btn-hero secondary">Our Story</button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <header class="section-header">
-      <h2>Our Signature Offerings</h2>
-    </header>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="icon-circle">☕</div>
-        <h3>Local & Hot Coffees</h3>
-        <p>From rich Barako to the signature Dubai Chocolate inspired drink—enjoy quality brews.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon-circle">🍛</div>
-        <h3>Comfort Meals</h3>
-        <p>Hearty Rice Meals (Tapsilog, Kare-Kare) and fresh Pastries perfect for any time of day.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon-circle">💡</div>
-        <h3>Creative Space</h3>
-        <p>Free Wi-Fi and charging ports make us the preferred spot for students and remote workers.</p>
-      </div>
-    </div>
-  </div>
-
-  <section class="container featured-product-section">
-    <header class="section-header">
-      <h2>Must Try: The Dubai Chocolate</h2>
-    </header>
-    <div class="featured-card">
-      <div class="product-details">
-        <h3 class="product-title">Iced Dubai Chocolate</h3>
-        <p class="tagline">An international favorite, re-imagined. This signature iced chocolate drink is rich, creamy, and uniquely refreshing.</p>
-        <div class="price-range">Price Range: ₱80 - ₱180 (for the Coffee/Beverage category)</div>
-        <p class="description">This drink is part of our Iced & Hot Coffees* range, which features local brews like Barako Coffee and international favorites. It has become a community favorite since our soft opening on **November 16, 2024**. Come try the drink that everyone is talking about!</p>
-        <a routerLink="/products-services" class="btn-hero primary btn-small">See Full Menu</a>
-      </div>
-      <div class="product-image">
-        <img src="assets/images/barako-coffee.jpeg" alt="A freshly prepared latte with latte art">
+        <a routerLink="/products-services"><button class="btn-hero primary">View Full Menu</button></a>
+        <a routerLink="/about"><button class="btn-hero secondary">Our Story</button></a>
       </div>
     </div>
   </section>
 
-  <section class="location-section">
+  <section class="section-features section-accent">
+    <div class="container">
+      <header class="section-header">
+        <h2>Our Signature Offerings</h2>
+      </header>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-circle">☕</div>
+          <h3>Local & Hot Coffees</h3>
+          <p>From rich Barako to the signature Dubai Chocolate inspired drink—enjoy quality brews.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">🍛</div>
+          <h3>Comfort Meals</h3>
+          <p>Hearty Rice Meals (Tapsilog, Kare-Kare) and fresh Pastries perfect for any time of day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-circle">💡</div>
+          <h3>Creative Space</h3>
+          <p>Free Wi-Fi and charging ports make us the preferred spot for students and remote workers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-product-section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Must Try: The Dubai Chocolate</h2>
+      </header>
+      <div class="featured-card">
+        <div class="product-image">
+          <img src="assets/images/barako-coffee.jpeg" alt="A freshly prepared latte with latte art">
+        </div>
+        <div class="product-details">
+          <h3 class="product-title">Iced Dubai Chocolate</h3>
+          <p class="tagline">An international favorite, re-imagined. This signature iced chocolate drink is rich, creamy, and uniquely refreshing.</p>
+          <div class="price-range">Price Range: ₱80 - ₱180</div>
+          <p class="description">Part of our Iced & Hot Coffees range, featuring local brews like Barako Coffee and international favorites. A community favorite since November 16, 2024.</p>
+          <a routerLink="/products-services" class="btn-hero primary btn-small">See Full Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section section-accent">
     <div class="container location-content-grid">
       <div class="location-details">
         <header class="section-header align-left">
           <h2>Visit Us</h2>
         </header>
-        <p class="location-info">
-          <strong>Location:</strong> Inside Bale Herencia, Angeles City, Pampanga.
-        </p>
-        <p class="location-info">
-          <strong>Operating Hours:</strong> Monday to Sunday, 10:00 AM – 10:00 PM.
-        </p>
-        
+        <p class="location-info"><strong>Location:</strong> Inside Bale Herencia, Angeles City, Pampanga.</p>
+        <p class="location-info"><strong>Operating Hours:</strong> Monday to Sunday, 10:00 AM – 10:00 PM</p>
         <a href="https://maps.app.goo.gl/NY7QgrMkJMqf57Hh8" target="_blank" class="btn-hero primary btn-location">Get Directions on Map</a>
         <div class="social-links">
-          <p>Follow our community on Instagram: 
-            <a href="https://www.instagram.com/centrocoffee.ph" target="_blank" class="instagram-link">@centrocoffee.ph</a>
-          </p>
+          <p>Follow our community on Instagram: <a href="https://www.instagram.com/centrocoffee.ph" target="_blank" class="instagram-link">@centrocoffee.ph</a></p>
         </div>
       </div>
       <div class="location-map">
-         <img src="assets/images/f1.jpeg" alt="A cozy spot inside Bale Herencia">
-
+        <img src="assets/images/f1.jpeg" alt="A cozy spot inside Bale Herencia">
       </div>
     </div>
   </section>
+
 </div>
